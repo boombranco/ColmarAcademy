@@ -1,0 +1,41 @@
+header {
+  font-family: 'Rubik', sans-serif;
+}
+
+.container {
+  background-color: cadetblue;
+  color: white;
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.container img {
+  height: 32px;
+  padding-left: 24px;
+  padding-right: 2px;
+}
+
+nav {
+  flex-grow: 1;
+  text-align: right;
+  padding-right: 16px;
+}
+
+nav span {
+  padding: 0 8px;
+  color: gray;
+}
+
+span.colmar {
+  color: black;
+  font-weight: bold;
+}
+span.academy {
+  color: gray;
+  font-weight: lighter;
+}
+
+.mobile-nav {
+  display: none;
+}
