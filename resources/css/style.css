@@ -10,6 +10,8 @@ header .container {
   height: 64px;
   display: flex;
   align-items: center;
+  position: fixed;
+  width: 100%;
 }
 
 .container img {
@@ -42,7 +44,136 @@ header .mobile-nav {
   display: none;
 }
 
-/* CSS for the main body */
-main {
+/* CSS for the body */
+body {
   font-family: 'Rubik', sans-serif;
+}
+
+/* CSS for the main part of the body */
+main {
+  padding-top: 64px;
+  border: 1px solid orange;
+}
+
+.featured, .featured .container, .featured img, .featured .container .text {
+  border: 1px solid blue;
+}
+.info, .info .container, .info .container .hurt, .info .container .hurt img, .info .container .hurt .text, .info .container .side, .info .container .side .sidebar, .info .container .side .sidebar img, .info .container .side .text {
+  border: 1px solid red;
+}
+.container .learning, .container .learning .box, .container .learning .box .learning-img, .container .learning .box .text {
+  border: 1px solid lightgreen;
+}
+.container .thesis, .container .thesis .video, .container .thesis video, .container .thesis .video .text, .container .thesis .exhibit, .container .thesis .exhibit .thesisexhibit, .container .thesis .exhibit .thesisexhibit img, .container .thesis .exhibit .thesisexhibit .text {
+  border: 1px solid pink;
+}
+footer, footer .footnote, footer .footnote .copyright, footer .footnote .terms {
+  border: 1px solid black;
+}
+
+
+/* CSS for the first section - featured image and text */
+.featured {
+  background-color: lightgray;
+}
+
+.featured .container {
+  display: flex;
+}
+
+.featured img {
+  width: 60%;
+  height: 50%;
+  display: block;
+  padding: 32px 24px 32px 24px;
+}
+
+.featured .container .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.featured .container .text h1 {
+  font-size: 32px;
+  font-weight: bold;
+  padding-bottom: 16px;
+  line-height: 40px;
+}
+
+.featured .container .text h3 {
+  font-size: 18px;
+  font-weight: normal;
+  padding-bottom: 16px;
+  line-height: 24px;
+}
+
+/* CSS for the second section - info image, text, and school information on the side */
+.info .container {
+  display: flex;
+}
+
+.info .container .hurt img {
+}
+
+.info .container .hurt .text h1 {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 0 0 24px 24px;
+  line-height: 40px;
+}
+
+.info .container .hurt .text h3 {
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0 24px 30px 24px;
+  line-height: 24px;
+}
+
+.info .container .hurt .text h5 {
+  font-size: 14px;
+  font-weight: normal;
+  padding: 0 0 32px 24px;
+}
+
+.info .container .side {
+  width: 103.2%;
+}
+
+.info .container .side .lecture {
+  background-color: lightgray;
+}
+
+.mobile-side {
+  display: none;
+}
+
+/* CSS for the third section - learning - 6 pictures and text boxes */
+.container .learning {
+  background-color: lightgray;
+}
+
+.mobile-learning {
+  display: none;
+}
+
+/* CSS for the fourth section - thesis exhibit - video and additional images and text */
+.container .thesis .exhibit .first {
+  background-color: lightgray;
+}
+
+.mobile-thesis {
+  display: none;
+}
+
+/* CSS for the footer */
+.mobile-footnote {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .hurt {
+    display: none;
+  }
 }
