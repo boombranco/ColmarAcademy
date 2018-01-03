@@ -15,15 +15,24 @@
       <div class="container">
       <img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo." class="logo">
       <span class="colmar">COLMAR</span><span class="academy">ACADEMY</span>
-      <nav>
+      <nav class="webversion">
         <span>On Campus</span>
         <span>Online</span>
         <span>Fore Companies</span>
         <span>Sign In</span>
       </nav>
       <!-- Mobile version -->
-      <nav class="mobile-nav container">
+      <nav class="mobile-nav">
         <ul>
+          <li><img src="./resources/images/ic-on-campus.svg" alt="On campus link."></li>
+          <li><img src="./resources/images/ic-online.svg" alt="Online link."></li>
+          <li><img src="./resources/images/ic-login.svg" alt="Login link."></li>
+        </ul>
+      </nav>
+      <!-- Eliminate logo name -->
+      <nav class="small-mobile-nav">
+        <ul>
+          <li><img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo."></li>
           <li><img src="./resources/images/ic-on-campus.svg" alt="On campus link."></li>
           <li><img src="./resources/images/ic-online.svg" alt="Online link."></li>
           <li><img src="./resources/images/ic-login.svg" alt="Login link."></li>
@@ -34,9 +43,11 @@
     <!-- Main body of the web page -->
     <main>
       <!-- First section - Featured image and title -->
-      <div class="featured">
-        <div class="container">
-          <img src="./resources/images/banner.jpg" alt="Students doing homework at a table outside.">
+      <div class="container">
+        <div class="featured">
+          <div class="feature-img">
+            <img src="./resources/images/banner.jpg" alt="Students doing homework at a table outside.">
+          </div>
           <div class="text">
             <h1>Learn something new every day</h1>
             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
@@ -87,27 +98,34 @@
           <div class="mobile-side">
             <div class="orientation sidebar">
               <img src="./resources/images/information-orientation-mobile.jpg" alt="An arial shot of students walking to class.">
-              <h2>Orientation date</h2>
-              <span>Tue 10/11 & Wed 10/12: 8am-3pm</span>
-              <a href="#">Read more</a>
+              <div class="text">
+                <h2>Orientation date</h2>
+                <h4>Tue 10/11 & Wed 10/12: 8am-3pm</h4>
+                <a href="#">Read more</a>
+              </div>
             </div>
             <div class="campus sidebar">
               <img src="./resources/images/information-campus-mobile.jpg" alt="A headshot of an older gentleman, with gray facial hair, wearing a beret hat.">
-              <h2>Our campus</h2>
-              <span>Find which campus is close by you</span>
-              <a href="#">Read more</a>
+              <div class="text">
+                <h2>Our campus</h2>
+                <h4>Find which campus is close by you</h4>
+                <a href="#">Read more</a>
+              </div>
             </div>
-            <div class="lecture">
+            <div class="lecture sidebar">
               <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="A headshot of an older gentleman, with gray facial hair, wearing a beret hat.">
-              <h2>Our guest lecture</h2>
-              <span>Join a keynote with Oliver Sack about music in medical treatment</span>
-              <a href="#">Read more</a>
+              <div class="text">
+                <h2>Our guest lecture</h2>
+                <h4>Join a keynote with Oliver Sack about music in medical treatment</h4>
+                <a href="#">Read more</a>
+              </div>
             </div>
           </div>
         </div>
 
       <!-- Third section - Start learning with 6 images -->
       <div class="container">
+        <h1 class="learningtitle">Start Learning</h1>
         <!-- Web version of the Learning section -->
         <div class="learning">
           <div class="box software">
@@ -191,10 +209,11 @@
           <div class="mobile-box marketing">
             <span>Marketing</span>
           </div>
-          </div>
+        </div>
       </div>
       <!-- Fourth section - Thesis exhibit with video and info -->
       <div class="container">
+        <h1 class="thesistitle">Thesis exhibit</h1>
         <!-- Web version of the Thesis exhibits section -->
         <div class="thesis">
           <div class="video">
