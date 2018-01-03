@@ -58,7 +58,7 @@ main {
 .featured, .featured .container, .featured img, .featured .container .text {
   border: 1px solid blue;
 }
-.info, .info .container, .info .container .hurt, .info .container .hurt img, .info .container .hurt .text, .info .container .side, .info .container .side .sidebar, .info .container .side .sidebar img, .info .container .side .text {
+.container .info, .container .info .practicing, .container .info .description, .container .info .practicing img, .container .info .practicing .text, .container .info .description img, .container .info .description .text {
   border: 1px solid red;
 }
 .container .learning, .container .learning .box, .container .learning .box .learning-img, .container .learning .box .text {
@@ -110,41 +110,107 @@ footer, footer .footnote, footer .footnote .copyright, footer .footnote .terms {
 }
 
 /* CSS for the second section - info image, text, and school information on the side */
-.info .container {
+.container .info {
   display: flex;
 }
 
-.info .container .hurt img {
+.container .info .practicing img {
+  width: 100%;
+  height: auto;
+  padding: 0 0 24px 0;
 }
 
-.info .container .hurt .text h1 {
-  font-size: 32px;
+.container .info .practicing {
+  padding: 32px 24px;
+  width: 60%;
+}
+
+.container .info .practicing .text h1 {
+  padding-bottom: 8px;
+  font-size: 24px;
   font-weight: bold;
-  padding: 0 0 24px 24px;
-  line-height: 40px;
 }
 
-.info .container .hurt .text h3 {
-  font-size: 18px;
-  font-weight: normal;
-  padding: 0 24px 30px 24px;
+.container .info .practicing .text h3 {
   line-height: 24px;
 }
 
-.info .container .hurt .text h5 {
-  font-size: 14px;
-  font-weight: normal;
-  padding: 0 0 32px 24px;
+.container .info .description {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.info .container .side {
-  width: 103.2%;
+.container .info .description .sidebar {
+  display: flex;
 }
 
-.info .container .side .lecture {
-  background-color: lightgray;
+.container .info .description img {
+  width: 35%;
+  height: 50%;
+  padding: 16px;
 }
 
+.container .info .description .orientation img {
+  padding-top: 32px;
+}
+
+.container .info .description .lecture {
+  padding-bottom: 32px;
+}
+
+.container .info .description .sidebar .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .info .description .sidebar .text h2 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.container .info .description .sidebar .text h4 {
+  line-height: 24px;
+}
+
+/*.container .info {
+  display: flex;
+  padding-top: 32px;
+}
+
+.container .info .practicing {
+  width: 60%;
+}
+
+.container .info .practicing img {
+  width: 100%;
+  height: auto;
+}
+
+.container .info .practicing .text {
+  padding: 32px 24px 32px 24px;
+}
+
+.container .info .practicing .text h1 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 24px;
+}
+
+.container .info .practicing .text h3 {
+  line-height: 24px;
+  padding-bottom: 32px;
+}
+
+.container .info .description {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+*/
 .mobile-side {
   display: none;
 }
@@ -152,6 +218,41 @@ footer, footer .footnote, footer .footnote .copyright, footer .footnote .terms {
 /* CSS for the third section - learning - 6 pictures and text boxes */
 .container .learning {
   background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 32px 72px 0 72px;
+  flex-basis: 700px;
+}
+
+.container .learning .box {
+  width: 300px;
+  padding: 0 16px 32px 16px;
+}
+
+.container .learning img {
+  width: 300px;
+  padding-left: 0px;
+  height: auto;
+}
+
+.container .learning .box .text {
+  padding: 16px 16px 24px 16px;
+  background-color: white;
+  height: 130px;
+}
+
+.container .learning h1 {
+  font-size: 24px;
+  padding-bottom: 8px;
+}
+
+.container .learning h2 {
+  padding-bottom: 8px;
+}
+
+.container .learning h3 {
+  line-height: 24px;
 }
 
 .mobile-learning {
@@ -163,11 +264,89 @@ footer, footer .footnote, footer .footnote .copyright, footer .footnote .terms {
   background-color: lightgray;
 }
 
+.container .thesis {
+  display: flex;
+}
+
+.container .thesis video {
+  width: 100%;
+  padding-bottom: 24px;
+}
+
+.container .thesis .video {
+  padding: 32px 24px;
+  width: 60%;
+}
+
+.container .thesis .video .text h2 {
+  padding-bottom: 8px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.container .thesis .video .text span {
+  line-height: 24px;
+}
+
+.container .thesis .exhibit {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.container .thesis .exhibit .thesisexhibit {
+  display: flex;
+}
+
+.container .thesis .exhibit img {
+  width: 35%;
+  height: 50%;
+  padding: 16px;
+}
+
+.container .thesis .exhibit .thesisexhibit .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .thesis .exhibit .thesisexhibit .text h2 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+
+.container .thesis .exhibit .thesisexhibit .text span {
+  line-height: 24px;
+}
+
 .mobile-thesis {
   display: none;
 }
 
 /* CSS for the footer */
+footer {
+  height: 100px;
+}
+
+.footnote {
+  display: flex;
+}
+
+footer .footnote {
+  padding: 16px 0 0 24px;
+}
+
+footer nav {
+  display: flex;
+  flex-direction: column;
+}
+
+footer nav li {
+  display: inline-flex;
+  padding-left: 12px;
+}
 .mobile-footnote {
   display: none;
 }
