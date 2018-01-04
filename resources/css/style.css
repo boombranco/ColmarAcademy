@@ -1,11 +1,11 @@
 
 /* CSS for the header */
 header {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Proza Libre', sans-serif;
 }
 
 header .container {
-  background-color: cadetblue;
+  background-color: white;
   color: white;
   height: 64px;
   display: flex;
@@ -28,15 +28,15 @@ nav {
 
 nav span {
   padding: 0 8px;
-  color: gray;
+  color: #C09F80;
 }
 
 span.colmar {
-  color: black;
+  color: #565656;
   font-weight: bold;
 }
 span.academy {
-  color: gray;
+  color: #C09F80;
   font-weight: lighter;
 }
 
@@ -93,13 +93,18 @@ header .small-mobile-nav {
 
 /* CSS for the body */
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Proza Libre', sans-serif;
+  color: #000
 }
 
 /* CSS for the main part of the body */
 main {
   padding-top: 64px;
   border: 1px solid orange;
+}
+
+h1, h2 {
+  color: #565656;
 }
 
 .container .featured, .container .featured .feature-img, .container .featured img, .container .featured .text {
@@ -121,7 +126,7 @@ footer, footer .footnote, footer .footnote .copyright, footer .footnote .terms {
 
 /* CSS for the first section - featured image and text */
 .featured {
-  background-color: lightgray;
+  background-color: #D7CEC7;
 }
 
 .container .featured {
@@ -159,6 +164,17 @@ footer, footer .footnote, footer .footnote .copyright, footer .footnote .terms {
   font-weight: normal;
   padding-bottom: 16px;
   line-height: 24px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 5px;
+  width: 80%;
+  height: 50px;
+  background-color: #76323F;
+  color: #FFF;
 }
 
 @media only screen and (max-width: 832px) {
